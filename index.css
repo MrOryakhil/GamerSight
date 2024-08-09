@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #ddd; /* Light grey text */
+}
+
+header {
+    background-color: #1a1a1a; /* Dark grey background for header */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px;
+    background-color: #1a1a1a; /* Dark grey background */
+    text-align: center;
+    color: #ddd; /* Light grey text */
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fff; /* White text for heading */
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    background-color: #1a1a1a; /* Dark grey background */
+    text-align: center;
+    color: #ddd; /* Light grey text */
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fff; /* White text for heading */
+}
+
+.contact-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555; /* Dark grey border */
+    border-radius: 5px;
+    background-color: #333; /* Dark background for inputs */
+    color: #fff; /* White text in input fields */
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #555; /* Dark grey button background */
+    color: #fff; /* White button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #777; /* Lighter grey on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: #1a1a1a; /* Dark grey background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+}
