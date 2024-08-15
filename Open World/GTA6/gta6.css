@@ -1,8 +1,9 @@
+
 /* Reset some default browser styles */
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding : 0;
+    box-sizing : border-box;
 }
 
 body {
@@ -68,6 +69,41 @@ hr {
 
     img {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Increase size of navigation links */
+    .navdiv ul li a {
+        font-size: 1.1rem;
+    }
+
+    /* Reduce padding for paragraphs */
+    .paragraph {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* Make images take up 95% width of mobile screen */
+    img {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    /* Footer content stacked vertically */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
     }
 }
 
@@ -140,6 +176,7 @@ nav ul li a:hover {
         font-size: 0.9rem;
     }
 }
+
 /* Make the link text color the same as the paragraph (white) */
 .backlinks {
     color: white;
@@ -150,6 +187,7 @@ nav ul li a:hover {
 .backlinks:hover {
     color: yellow; /* Change to your preferred hover color */
 }
+
 /* Footer styles */
 .footer {
     background-color: #222;
@@ -227,6 +265,7 @@ nav ul li a:hover {
     border-top: 1px solid #444;
     padding-top: 10px;
 }
+
 .trailer {
     text-align: center;
     margin: 20px 0;
@@ -236,63 +275,7 @@ nav ul li a:hover {
     color: white;
     margin-bottom: 20px;
 }
-/* CSS for the trailer section */
-.trailer {
-    text-align: center;
-    margin: 20px 0;
-}
-    
-.trailer h2 {
-    color: white;
-    margin-bottom: 20px;
-}
-/* Add these styles to your existing gta6.css */
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-.fullscreen-img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    display: none;
-}
-  
-.fullscreen-img img {
-    max-width: 90%;
-    max-height: 90%;
-}
-  
-.close-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}  
-/* Spacing between the last div and the footer */
-#CallToAction {
-    margin-bottom: 50px; /* Adjust the value as needed */
-}
-  
-/* General body styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-  
 /* Fullscreen image styles */
 .fullscreen-img {
     position: fixed;
@@ -307,17 +290,22 @@ body {
     z-index: 1000;
     display: none;
 }
-  
-  .fullscreen-img img {
+
+.fullscreen-img img {
     max-width: 90%;
     max-height: 90%;
 }
-  
-.close-btn {
+
+.close-btn {    
     position: fixed;
     top: 20px;
     right: 20px;
     font-size: 30px;
     color: white;
     cursor: pointer;
+}  
+
+/* Spacing between the last div and the footer */
+#CallToAction {
+    margin-bottom: 50px; /* Adjust the value as needed */
 }
