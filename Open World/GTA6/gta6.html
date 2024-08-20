@@ -25,7 +25,13 @@
                 <li><a href="../../index.htm" target="_blank">Home</a></li>
                 <li><a href="../../index.htm" target="_blank">About Us</a></li>
                 <li><a href="../../index.htm" target="_blank">Contact</a></li>
-                <li><a href="../../index.htm" target="_blank">Content</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event)">Content</a>
+                    <ul class="dropdown">
+                        <li><a href="https://www.gamerssight.com/Open%20World/GTA6/gta6.html" class="dropdown-item">GTA 6</a></li>
+                        <li><a href="https://www.gamerssight.com/Open%20World/Assassian%20Creed/acshadows.html" class="dropdown-item">Assassian Creed: Shadows</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -156,6 +162,20 @@
               }
             });
           });
+           function toggleDropdown(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const dropdown = event.currentTarget.nextElementSibling;
+            const isVisible = dropdown.style.display === 'block';
+            document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none'); // Hide all dropdowns
+            dropdown.style.display = isVisible ? 'none' : 'block'; // Toggle visibility
+        }
+
+        /* Optional: Hide dropdown when clicking outside */
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
+            }
+        }); 
         </script>
 </body>
 </html>
