@@ -180,3 +180,47 @@ footer a:hover {
     font-size: 30px;
     cursor: pointer;
 }
+
+/* Dropdown menu styling */
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Positioning relative for dropdown */
+}
+
+nav ul li .dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    background-color: #1a1a1a; /* Matching background color */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #e60000; /* Optional: border for visibility */
+    z-index: 1; /* Ensure dropdown is on top */
+    min-width: 160px; /* Minimum width for dropdown */
+    top: 100%; /* Position below the menu item */
+    left: 0; /* Align with the left edge of the menu item */
+}
+
+nav ul li .dropdown li {
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li .dropdown a {
+    color: #ccc; /* Text color for dropdown links */
+    text-decoration: none;
+    display: block; /* Make links block level for full width */
+    padding: 10px 20px; /* Padding for better spacing */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li .dropdown a:hover {
+    color: #e60000; /* Hover color matching your theme */
+    background-color: #333; /* Slightly lighter background on hover */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth background color transition */
+}
+
+nav ul li .dropdown a:hover span {
+    transform: scale(1.1); /* Enlarge only the text on hover */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
