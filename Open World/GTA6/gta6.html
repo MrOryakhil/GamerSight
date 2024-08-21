@@ -43,7 +43,7 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link" onclick="toggleDropdown(event)">Content</a>
                     <ul class="dropdown">
-                        <li><a href="https://www.gamerssight.com/Open%20World/GTA6/gta6.html" class="dropdown-item">GTA 6</a></li>
+                        <li><a href="https://www.gamerssight.com/Open%20World/spiderman2/spiderman2.html" class="dropdown-item">SpiderMan 2</a></li>
                         <li><a href="https://www.gamerssight.com/Open%20World/Assassian%20Creed/acshadows.html" class="dropdown-item">Assassian Creed: Shadows</a></li>
                     </ul>
                 </li>
@@ -128,18 +128,9 @@
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Us</h3>
-                <ul class="social-links">
-                    <li><a href="https://www.facebook.com/rockstargames" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.twitter.com/rockstargames" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/rockstargames" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/rockstargames" target="_blank">YouTube</a></li>
+                    <li><a href="../../index.htm">Home</a></li>
+                    <li><a href="../../index.htm">About</a></li>
+                    <li><a href="../../index.htm">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -171,26 +162,26 @@
               fullscreenContainer.style.display = "none";
             });
           
-            fullscreenContainer.addEventListener("click", (e) => {
-              if (e.target === fullscreenContainer || e.target === closeButton) {
-                fullscreenContainer.style.display = "none";
-              }
+                fullscreenContainer.addEventListener("click", (e) => {
+                if (e.target === fullscreenContainer || e.target === closeButton) {
+                    fullscreenContainer.style.display = "none";
+                }
+                });
             });
-          });
-           function toggleDropdown(event) {
-            event.preventDefault(); // Prevent default link behavior
-            const dropdown = event.currentTarget.nextElementSibling;
-            const isVisible = dropdown.style.display === 'block';
-            document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none'); // Hide all dropdowns
-            dropdown.style.display = isVisible ? 'none' : 'block'; // Toggle visibility
-        }
-
-        /* Optional: Hide dropdown when clicking outside */
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.nav-item')) {
-                document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
+            function toggleDropdown(event) {
+                event.preventDefault(); // Prevent default link behavior
+                const dropdown = event.currentTarget.nextElementSibling;
+                const isVisible = dropdown.style.display === 'block';
+                document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none'); // Hide all dropdowns
+                dropdown.style.display = isVisible ? 'none' : 'block'; // Toggle visibility
             }
-        }); 
+
+            /* Optional: Hide dropdown when clicking outside */
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.nav-item')) {
+                    document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
+                }
+            });
         </script>
 </body>
 </html>
