@@ -17,6 +17,14 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event)">Content</a>
+                    <ul class="dropdown">
+                        <li><a href="https://www.gamerssight.com/Open%20World/GTA6/gta6.html" class="dropdown-item">GTA 6</a></li>
+                        <li><a href="https://www.gamerssight.com/Open%20World/Assassian%20Creed/acshadows.html" class="dropdown-item">Assassian Creed: Shadows</a></li>
+                        <li><a href="https://www.gamerssight.com/Open%20World/spiderman2/spiderman2.html" class="dropdown-item">SpiderMan 2</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -31,7 +39,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
-        <p>If you have any questions or feedback, feel free to reach out to us using the form below, or email us directly at <a href="mailto:contact@yourgamingwebsite.com">contact@yourgamingwebsite.com</a>.</p>
+        <p>If you have any questions or feedback, feel free to reach out to us using the form below, or email us directly at <a href="mailto:orya@gamerssight.com">orya@gamerssight.com.com</a>.</p>
         
     </section>
 
@@ -39,5 +47,21 @@
     <footer>
         <p>© Gamer Sights 2024. All rights reserved.</p>
     </footer>
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const dropdown = event.currentTarget.nextElementSibling;
+            const isVisible = dropdown.style.display === 'block';
+            document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none'); // Hide all dropdowns
+            dropdown.style.display = isVisible ? 'none' : 'block'; // Toggle visibility
+        }
+
+        /* Optional: Hide dropdown when clicking outside */
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
+            }
+        });
+    </script>
 </body>
 </html>
