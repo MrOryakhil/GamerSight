@@ -30,5 +30,11 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
+      <loc>https://www.gamerssight.com/Open%20World/silenthill/silenthill2.html</loc>
+      <lastmod>2024-09-1</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
    <!-- Add more URLs here -->
 </urlset>
