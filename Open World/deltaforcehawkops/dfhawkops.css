@@ -1,0 +1,415 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Header (Navigation) */
+header {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e60000;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+}
+
+.logo h1 {
+    color: #e60000;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #e60000;
+    text-decoration: underline;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #e60000;
+    z-index: 1;
+    min-width: 160px;
+    top: 100%;
+    left: auto;
+    right: 0;
+    transform: translateY(5px) translateX(5px);
+}
+
+nav ul li .dropdown li {
+    margin: 0;
+}
+
+nav ul li .dropdown a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li .dropdown a:hover {
+    color: #e60000;
+    background-color: #333;
+}
+
+nav ul li .dropdown a:hover span {
+    transform: scale(1.1);
+}
+
+a {
+    color: #dcdcdc; /* Same color as the paragraph text */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+a:hover,
+a:focus {
+    color: #ffffff; /* White color for hover/focus state */
+    background-color: #000000; /* Black background for better contrast */
+    text-decoration: underline; /* Optional: underline on hover/focus */
+}
+
+a:active {
+    color: #ffffff; /* Maintain white color when link is clicked */
+    background-color: #000000; /* Maintain black background when clicked */
+}
+
+
+
+
+/* Card Section */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Individual Card Styles */
+.card {
+    width: 400px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(20px);
+    contain: content;
+    will-change: transform, box-shadow;
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(50, 50, 50, 0.9));
+    position: relative;
+    flex-shrink: 0; /* Ensure the card maintains its 400x400 size */
+    margin-right : 50px;
+    margin-left : 50px;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+    border-color: #ff0000;
+}
+
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    pointer-events: none;
+    z-index: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card::before {
+    box-shadow: 0 0 15px 5px #ff0000;
+    opacity: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Expanded Card Styles */
+.card.expanded {
+    flex-basis: 100%;
+    max-width: none;
+    height: auto; /* Allow height to grow for expanded cards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and Subtitle Styling */
+.card h2, .card h3 {
+    margin: 0 0 10px 0;
+    color: #e60000;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+/* Visible state - used when the cards are fully loaded */
+.card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Card Content Styling */
+.card-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.card.expanded .card-content {
+    display: block;
+}
+
+.card-content p {
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+}
+/* Responsive Design: Stack cards on smaller screens */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Improved Accessibility */
+.card:focus {
+    outline: 3px solid #e60000;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    color: #ccc;
+    text-align: center;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e60000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    padding: 10px 0;
+}
+
+
+
+.images {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Full width */
+    height: 300px; /* Fixed height for the slider on mobile devices */
+}
+
+/* Media query for larger screens (PC devices) */
+@media (min-width: 769px) {
+    .images {
+        height: 500px; /* Increased height for PC screens */
+    }
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition */
+    height: 100%; /* Full height of the container */
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    transition: transform 1s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%; /* Ensure images fill the container */
+    object-fit: cover; /* Maintain aspect ratio while filling container */
+}
+
+.slide.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.fade.active {
+    opacity: 1;
+}
+
+/* Optional: Add overlay for better text visibility on images */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.images:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+@media (min-width: 769px) {
+    .card-content {
+        padding-top: 50px !important; /* Force padding to be applied */
+        padding-bottom: 20px !important; 
+        padding-left: 70px !important;
+        padding-right: 70px !important;
+
+    }
+    img{
+        padding-bottom: 30px
+    }
+}
+
+/* Padding for mobile devices */
+@media (max-width: 768px) {
+    .card-content {
+        padding: 20px !important; /* Force padding to be applied */
+    }
+    img{
+        padding-bottom: 30px
+    }
+}
+
+.trailer iframe {
+    position: absolute; /* Positions iframe absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes iframe fill the trailer div */
+    height: 70%; /* Makes iframe fill the trailer div */
+}
+
+p {
+    line-height: 1.6; /* Improves readability by increasing line spacing */
+    margin-bottom: 15px;
+}
+
+a {
+    color: #3498db; /* Adjusts hyperlink color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+        
+/* Hide the close icon and button by default */
+.close-icon, .close-button {
+    display: none;
+}
+
+/* When the card is expanded, show the close icon and button */
+.card.expanded .close-icon,
+.card.expanded .close-button {
+    display: block;
+}
+
+/* Position the close icon at the top-right corner */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: red; /* Style as desired */
+}
+
+/* Style the close button at the bottom of the card */
+.close-button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.close-button:hover {
+    background-color: #d90000;
+}
