@@ -272,8 +272,9 @@
     
         <script>
             document.addEventListener('DOMContentLoaded', () => {
+                // Slider functionality
                 const slidesContainers = document.querySelectorAll('.slides');
-                
+            
                 slidesContainers.forEach(slideContainer => {
                     const slides = slideContainer.querySelectorAll('.slide');
                     const totalSlides = slides.length;
@@ -292,7 +293,7 @@
             
                     // Start the slider
                     function startSlider() {
-                        slideInterval = setInterval(moveToNextSlide, 4000); // Change slide every 4 seconds
+                        slideInterval = setInterval(moveToNextSlide, 4000);
                         isSliding = true;
                     }
             
@@ -302,13 +303,9 @@
                         isSliding = false;
                     }
             
-                    // Toggle slider state (start/stop)
+                    // Toggle slider state
                     function toggleSlider() {
-                        if (isSliding) {
-                            stopSlider();
-                        } else {
-                            startSlider();
-                        }
+                        isSliding ? stopSlider() : startSlider();
                     }
             
                     // Initially start the slider
@@ -318,54 +315,30 @@
                     slideContainer.addEventListener('click', toggleSlider);
                     slideContainer.addEventListener('touchstart', toggleSlider);
                 });
-            });
-        
-            document.addEventListener('DOMContentLoaded', function() {
+            
+                // Card functionality
                 const cards = document.querySelectorAll('.card');
-        
+            
                 // Show all cards on page load
-                cards.forEach((card) => {
-                    card.classList.add('visible');
-                });
-        
-                // Cache elements that will be frequently accessed
-                const dropdowns = document.querySelectorAll('.dropdown');
-        
-                // Event delegation for handling card expansion, dropdown toggling, and collapsing cards
-                document.addEventListener('click', function(e) {
+                cards.forEach(card => card.classList.add('visible'));
+            
+                // Event delegation for handling card expansion and collapsing cards
+                document.addEventListener('click', e => {
                     const target = e.target;
-        
+            
                     // Handle card expansion
                     const card = target.closest('.card');
                     if (card && !target.classList.contains('close-icon') && !target.classList.contains('close-button')) {
                         card.classList.add('expanded');
                         return;
                     }
-        
-                    // Handle card collapse (reset to initial form) when clicking the "X" or close button
+            
+                    // Handle card collapse
                     if (target.classList.contains('close-icon') || target.classList.contains('close-button')) {
                         const cardToCollapse = target.closest('.card');
-                        cardToCollapse.classList.remove('expanded'); // Collapse the card by removing 'expanded'
+                        cardToCollapse.classList.remove('expanded');
                         return;
                     }
-        
-                    // Handle dropdown toggle
-                    const navLink = target.closest('.nav-link');
-                    if (navLink) {
-                        e.preventDefault();
-                        const dropdown = navLink.nextElementSibling;
-                        const isVisible = dropdown.style.display === 'block';
-        
-                        // Close all dropdowns
-                        dropdowns.forEach(d => d.style.display = 'none');
-        
-                        // Toggle current dropdown
-                        dropdown.style.display = isVisible ? 'none' : 'block';
-                        return;
-                    }
-        
-                    // Removed collapsing effect when clicking outside cards and dropdowns
-                    dropdowns.forEach(d => d.style.display = 'none');
                 });
             });
         </script>
