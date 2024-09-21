@@ -335,6 +335,7 @@ footer a:hover {
         padding-bottom: 20px !important; 
         padding-left: 70px !important;
         padding-right: 70px !important;
+        font-size: 20px;
 
     }
     img{
@@ -346,9 +347,15 @@ footer a:hover {
 @media (max-width: 768px) {
     .card-content {
         padding: 20px !important; /* Force padding to be applied */
+        
     }
     img{
         padding-bottom: 30px
+    }
+    .card hidden{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        font-size: 18px;
     }
 }
 
