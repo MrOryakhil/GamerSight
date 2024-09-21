@@ -345,19 +345,21 @@ footer a:hover {
 
 /* Padding for mobile devices */
 @media (max-width: 768px) {
-    .card-content {
-        padding: 20px !important; /* Force padding to be applied */
-        
-    }
-    img{
-        padding-bottom: 30px
-    }
-    .card hidden{
+    .card.hidden {
         margin-left: 10px !important;
         margin-right: 10px !important;
-        font-size: 18px;
+        font-size: 18px; /* Increase font size for better readability on mobile */
+    }
+
+    .card-content {
+        padding: 20px !important; /* Force padding to be applied */
+    }
+
+    img {
+        padding-bottom: 30px; /* Space below images */
     }
 }
+
 
 .trailer iframe {
     position: absolute; /* Positions iframe absolutely */
