@@ -84,7 +84,7 @@ th {
 
 @media (min-width: 769px) {
         /* Image styles for PC */
-    img {
+    img, iframe {
         display: block; /* Ensure the image behaves like a block element */
         margin-left: 10%; /* 10% margin from the left */
         margin-right: 10%; /* 10% margin from the right */
@@ -102,7 +102,7 @@ th {
         margin-top: 50px; /* 50px margin between paragraphs */
     }
 
-    h1, table {
+    h1, h2, table {
         margin-left: 10%; /* Same left margin as image */
         margin-right: 10%; /* Same right margin as image */
     }
@@ -112,7 +112,7 @@ th {
 /* Media query for mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
     /* Image styles for mobile */
-    img {
+    img, iframe {
         margin-left: 10px; /* 10px margin from the left */
         margin-right: 10px; /* 10px margin from the right */
         margin-top: 30px; /* 30px margin from the top */
