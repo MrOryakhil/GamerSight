@@ -73,5 +73,20 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <loc>https://www.gamerssight.com/news/godofwar2.html</loc>
+      <lastmod>2024-09-24</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <loc>https://www.gamerssight.com/news/nvidia1.html</loc>
+      <lastmod>2024-09-24</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <loc>https://www.gamerssight.com/news/telegram1.html</loc>
+      <lastmod>2024-09-24</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
    <!-- Add more URLs here -->
 </urlset>
