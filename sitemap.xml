@@ -88,5 +88,30 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   </url>
+   <loc>https://www.gamerssight.com/news/dontnod.html</loc>
+      <lastmod>2024-09-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   </url>
+   <loc>https://www.gamerssight.com/news/ghostofyotei.html</loc>
+      <lastmod>2024-09-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   </url>
+   <loc>https://www.gamerssight.com/news/Marvel1943RiseofHydra.html</loc>
+      <lastmod>2024-09-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   </url>
+   <loc>https://www.gamerssight.com/news/mortalcombat1.html</loc>
+      <lastmod>2024-09-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
    <!-- Add more URLs here -->
 </urlset>
