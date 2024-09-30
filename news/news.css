@@ -32,6 +32,7 @@ nav ul {
 nav ul li {
     margin: 0 15px;
     position: relative;
+
 }
 
 
@@ -159,7 +160,14 @@ th {
         margin-right: 20%;
 
     }
-
+    ul {
+        font-size: 22px;
+        line-height: 1.6;
+        padding: 10px;
+        text-align: justify;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 
 }
 /* Media query for mobile devices (max-width: 768px) */
@@ -249,6 +257,14 @@ th {
     /* Ensure that the table is scrollable horizontally if content exceeds screen width */
     .table-container {
         overflow-x: auto;
+    }
+    ul{
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 10px;
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
