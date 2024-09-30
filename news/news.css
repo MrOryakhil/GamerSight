@@ -63,12 +63,7 @@ nav ul li .dropdown {
 }
 
 
-table {
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #333;
-    color: white;
-}
+
 
 th, td {
     border: 1px solid #555;
@@ -107,7 +102,14 @@ th {
         margin-right: auto;
         height: 640px;
     }
-    
+    table {
+        border-collapse: collapse;
+        margin-left: 20%; /* Same left margin as image */
+        margin-right: 20%; /* Same right margin as image */
+        margin-bottom : 100px;
+        background-color: #333;
+        color: white;
+    }
 
     /* Paragraph styles for PC */
     p {
@@ -188,6 +190,14 @@ th {
         margin-left: 10%; /* Same left margin as image */
         margin-right: 10%; /* Same right margin as image */
         margin-top: 50px; /* 50px margin between paragraphs */
+    }
+    table {
+        border-collapse: collapse;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom : 100px;
+        background-color: #333;
+        color: white;
     }
 
     /* Paragraph styles for mobile */
