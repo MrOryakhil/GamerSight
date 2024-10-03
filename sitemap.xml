@@ -48,6 +48,7 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
    <loc>https://www.gamerssight.com/news/windowsapp.html</loc>
       <lastmod>2024-09-23</lastmod>
       <changefreq>weekly</changefreq>
@@ -58,113 +59,199 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
    <loc>https://www.gamerssight.com/news/googleAI1.html</loc>
       <lastmod>2024-09-23</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
    <loc>https://www.gamerssight.com/news/microsoft1.html</loc>
       <lastmod>2024-09-23</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
    <loc>https://www.gamerssight.com/news/microsoft2.html</loc>
       <lastmod>2024-09-23</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
    <loc>https://www.gamerssight.com/news/godofwar2.html</loc>
       <lastmod>2024-09-24</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
    <loc>https://www.gamerssight.com/news/nvidia1.html</loc>
       <lastmod>2024-09-24</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
    <loc>https://www.gamerssight.com/news/telegram1.html</loc>
       <lastmod>2024-09-24</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/dontnod.html</loc>
       <lastmod>2024-09-27</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/ghostofyotei.html</loc>
       <lastmod>2024-09-27</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/Marvel1943RiseofHydra.html</loc>
       <lastmod>2024-09-27</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/Zhaoxin.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/visionpro.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/nvidia2.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/nvidia3.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/nvidia4.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/nvidia5.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/internet.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/snapdragon.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/lenovo.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
-   </url>
+   <url>
    <loc>https://www.gamerssight.com/news/klevv.html</loc>
       <lastmod>2024-09-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/witcher.html</loc>
+      <lastmod>2024-10-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/nvidia6.html</loc>
+      <lastmod>2024-10-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/nvidia7.html</loc>
+      <lastmod>2024-10-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/snapdragon2.html</loc>
+      <lastmod>2024-10-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/intel.html</loc>
+      <lastmod>2024-10-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/china_ai.html</loc>
+      <lastmod>2024-10-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/windows.html</loc>
+      <lastmod>2024-10-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/intel200.html</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/amd.html</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/gigabyte.html</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/comparison.html</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/halo.html</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+   <loc>https://www.gamerssight.com/news/buldarsgate.html</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+
    <!-- Add more URLs here -->
 </urlset>
