@@ -87,11 +87,34 @@ th {
         margin-left: 10%; /* 10% margin from the left */
         margin-right: 10%; /* 10% margin from the right */
         margin-top: 50px; /* 50px margin from the top */
-        margin-bottom: 50px; /* 50px margin from the bottom */
+        margin-bottom: 10px; /* 50px margin from the bottom */
         width: 60%; /* 80% width of the container */
         margin-left: auto;
         margin-right: auto;
     }
+    .share-btn {
+        display: block;
+        background-color: yellow; /* Yellow button */
+        color: black; /* Text color */
+        text-align: center;
+        padding: 15px 0; /* Padding for the button */
+        font-size: 20px; /* Increased font size for visibility */
+        font-weight: bold; /* Make text bold */
+        border: none; /* Remove any default border */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        width: 60%; /* Set width to 60% */
+        margin-left: auto; /* Center align */
+        margin-right: auto; /* Center align */
+        margin-top: 10px; /* Space above the button */
+        margin-bottom: 50px; /* Space below the button */
+        text-decoration: none; /* Remove underline from text */
+        border-radius: 5px; /* Rounded corners */
+    }
+    
+    .share-btn:hover {
+        background-color: #ffcc00; /* Slightly darker yellow on hover */
+    }
+    
     iframe {
         display: block; /* Ensure the image behaves like a block element */
         margin-left: 10%; /* 10% margin from the left */
@@ -177,10 +200,32 @@ th {
         margin-left: 10px; /* 10px margin from the left */
         margin-right: 10px; /* 10px margin from the right */
         margin-top: 30px; /* 30px margin from the top */
-        margin-bottom: 30px; /* 30px margin from the bottom */
+        margin-bottom: 10px; /* 30px margin from the bottom */
         width: calc(100% - 20px); /* Adjust width to fit the screen minus the margins */
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .share-btn {
+        display: block;
+        background-color: yellow; /* Yellow button */
+        color: black; /* Text color */
+        text-align: center;
+        padding: 15px 0; /* Padding for the button */
+        font-size: 20px; /* Increased font size for visibility */
+        font-weight: bold; /* Make text bold */
+        border: none; /* Remove any default border */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        width: 60%; /* Set width to 60% */
+        margin-left: 10px; /* Center align */
+        margin-right: 10px; /* Center align */
+        margin-top: 10px; /* Space above the button */
+        margin-bottom: 50px; /* Space below the button */
+        text-decoration: none; /* Remove underline from text */
+        border-radius: 5px; /* Rounded corners */
+    }
+    
+    .share-btn:hover {
+        background-color: #ffcc00; /* Slightly darker yellow on hover */
     }
     iframe {
         margin-left: 10px; /* 10px margin from the left */
