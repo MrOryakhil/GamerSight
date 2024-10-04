@@ -2,13 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Gaming Website</title>
-    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width">
+    <title>Gamers Sights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #000; /* Solid black background */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-image: url('./backgrounds/pattern.png'); /* Subtle dark pattern */
+            background-size: cover;
+        }
+        
+
+        /* Logo and Header */
+        .logo h1 {
+            color: #FFD700;
+            font-size: 3rem;
+            margin: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #FCCB06;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Content Section Styling */
+        .content-container {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            padding: 20px;
+            position: relative;
+            background-color: #111;
+            border: 2px solid #FCCB06;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+        }
+        .content::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Card Styling */
+        .card {
+            flex: 0 0 auto;
+            max-width: 350px;
+            margin: 10px;
+            background-color: #1c1c1c;
+            border: 2px solid #FFD700;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(255, 215, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.6);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+        .card-content p {
+            font-size: 1rem;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+        .card-content a {
+            color: #FFD700;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .card-content a:hover {
+            color: #fff;
+        }
+
+        /* Arrows */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .arrow.left {
+            left: 0;
+        }
+        .arrow.right {
+            right: 0;
+        }
+
+        /* Section Heading */
+        .heading, .news-heading {
+            margin-left: 40px;
+            color: #FFD700;
+            text-shadow: 2px 2px #000;
+            font-size: 2rem;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <div class="logo">
             <h1>Gamers Sights</h1>
@@ -16,55 +152,239 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" onclick="toggleDropdown(event)">Content</a>
-                    <ul class="dropdown">
-                        <li><a href="https://www.gamerssight.com/Open%20World/GTA6/gta6.html" class="dropdown-item">GTA 6</a></li>
-                        <li><a href="https://www.gamerssight.com/Open%20World/Assassian%20Creed/acshadows.html" class="dropdown-item">Assassian Creed: Shadows</a></li>
-                        <li><a href="https://www.gamerssight.com/Open%20World/spiderman2/spiderman2.html" class="dropdown-item">SpiderMan 2</a></li>
-                        <li><a href="https://www.gamerssight.com/Open%20World/godofwar_ragnarok/gow_ragnarok.html" class="dropdown-item">God of War: Ragnarok</a></li>
-                        <li><a href="https://www.gamerssight.com/Open%20World/silenthill/silenthill2.html" class="dropdown-item">Silent Hill 2: Remake</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p>Welcome to Gamer Sights, your number one source for the latest gaming news, updates, and reviews. We’re dedicated to providing you the very best content, with an emphasis on accuracy, timely updates, and comprehensive coverage of all things gaming.</p>
-        <p>Our mission is to keep you informed about the gaming world, from the hottest new releases to the best gaming appliances. Whether you're a hardcore gamer or just enjoy casual play, we've got you covered!</p>
-    </section>
+    <div class="overall">
+        <!-- Featured Content Section -->
+        <h2 class="heading">Featured Content</h2>
+        <div class="content-container">
+            <button class="arrow left" onclick="scrollToNextOrPrevCard('featured', 'left')">&#9664;</button>
+            <div class="content" id="featured-content">
+                <div class="card">
+                    <img src="https://www.gamerssight.com/Open World/deltaforcehawkops/dfho.webp" alt="The Witcher New Saga">
+                    <div class="card-content">
+                        <h2>Delta force hawk ops</h2>
+                        <p>Delta force hawk ops is expected to launch in Q1 2025. Explore the latest news on Delta force hawk ops's release date, GamePlay, and Graphics updates</p>
+                        <a href="https://www.gamerssight.com/Open%20World/deltaforcehawkops/dfhawkops.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/Open%20World/Assassian%20Creed/releasedate.jpg" alt="The Witcher New Saga">
+                    <div class="card-content">
+                        <h2>Assassian Creed: Shadows</h2>
+                        <p>Assassian Creed: Shadows Release Date,Assassian Creed: Shadows Location,Assassian Creed: Shadows Characters</p>
+                        <a href="https://www.gamerssight.com/Open%20World/Assassian%20Creed/acshadows.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/Open World/godofwar_ragnarok/story1.JPG" alt="The Witcher New Saga">
+                    <div class="card-content">
+                        <h2>God of war Ragnarok</h2>
+                        <p>God of war Ragnarok Release date, Gameplay and Graphics</p>
+                        <a href="https://www.gamerssight.com/Open World/godofwar_ragnarok/gow_ragnarok.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/Open%20World/spiderman2/releasedate.jpeg" alt="The Witcher New Saga">
+                    <div class="card-content">
+                        <h2>Spiderman 2</h2>
+                        <p>Spiderman 2 release date, plateforms, Gameplay,settings and characters</p>
+                        <a href="https://www.gamerssight.com/Open%20World/spiderman2/spiderman2.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/Open%20World/silenthill/background.webp" alt="The Witcher New Saga">
+                    <div class="card-content">
+                        <h2>Silent Hill 2 Remake</h2>
+                        <p>Silent Hill 2 Remake Release date, Gameplay and characters</p>
+                        <a href="https://www.gamerssight.com/Open%20World/silenthill/silenthill2.html">Learn More</a>
+                    </div>
+                </div>
+                <!-- Additional cards for Featured Content -->
+            </div>
+            <button class="arrow right" onclick="scrollToNextOrPrevCard('featured', 'right')">&#9654;</button>
+        </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or feedback, feel free to reach out to us using the form below, or email us directly at <a href="mailto:orya@gamerssight.com">orya@gamerssight.com.com</a>.</p>
-        
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>© Gamer Sights 2024. All rights reserved.</p>
+        <!-- News Section -->
+        <h2 class="news-heading">Latest News</h2>
+        <div class="content-container">
+            <button class="arrow left" onclick="scrollToNextOrPrevCard('news', 'left')">&#9664;</button>
+            <div class="content" id="news-content">
+                <div class="card">
+                    <img src="https://www.gamerssight.com/newsphotos/Zhaoxin-KX-7000-1.jpg" alt="The Witcher News">
+                    <div class="card-content">
+                        <h2>Zhaoxin KX-7000 Processor</h2>
+                        <p>Zhaoxin KX-7000 Processor: Performance Review & Gaming Benchmarks</p>
+                        <a href="https://www.gamerssight.com/news/Zhaoxin.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/newsphotos/the-witcher-new-saga-1.webp" alt="The Witcher News">
+                    <div class="card-content">
+                        <h2>CD Projekt</h2>
+                        <p>CD Projekt Red Director Talks About Hiring a Farmer for The Witcher 4</p>
+                        <a href="https://www.gamerssight.com/news/witcher.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/newsphotos/W1124H2.jpg" alt="The Witcher News">
+                    <div class="card-content">
+                        <h2>Windows 11 Major Update</h2>
+                        <p>Windows 11 Major Update 2024 (24H2) Now Available for Download</p>
+                        <a href="https://www.gamerssight.com/news/windows.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/newsphotos/snapdragon1.jpg" alt="The Witcher News">
+                    <div class="card-content">
+                        <h2>Next-Gen Snapdragon X2 Processors</h2>
+                        <p>Qualcomm is working on its next-gen Snapdragon X2 processors, aiming for a significant price drop to compete with Intel's Lunar Lake and AMD's Ryzen AI.</p>
+                        <a href="https://www.gamerssight.com/news/snapdragon2.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/newsphotos/nvidia-app-1.jpg" alt="The Witcher News">
+                    <div class="card-content">
+                        <h2>Nvidia Introduces Nvidia App</h2>
+                        <p>Nvidia introduces a new unified software called Nvidia App, merging features from the Nvidia Control Panel and GeForce Experience for easier graphics card management.</p>
+                        <a href="https://www.gamerssight.com/news/nvidia7.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.gamerssight.com/newsphotos/Ghost-of-Yotei.webp" alt="The Witcher News">
+                    <div class="card-content">
+                        <h2>Ghost of Yotei, The Sequel to Ghost of Tsushima</h2>
+                        <p>Sucker Punch Productions announces Ghost of Yotei, the official sequel to Ghost of Tsushima, exclusively for PlayStation 5 with new characters, storylines, and enhanced graphics.</p>
+                        <a href="https://www.gamerssight.com/news/dontnod.html">Learn More</a>
+                    </div>
+                </div>
+                <!-- Additional cards for News Section -->
+            </div>
+            <button class="arrow right" onclick="scrollToNextOrPrevCard('news', 'right')">&#9654;</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Gamers Sight</h3>
+                <p>Gamers Sight is your go-to source for the latest news, rumors, and leaks about Gaming and Gaming Appliances. Stay tuned for more updates and exclusive insights.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.htm">Home</a></li>
+                    <li><a href="../../index.htm">About</a></li>
+                    <li><a href="../../index.htm">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GamersSight. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript for Scroll Functionality -->
     <script>
-        function toggleDropdown(event) {
-            event.preventDefault(); // Prevent default link behavior
-            const dropdown = event.currentTarget.nextElementSibling;
-            const isVisible = dropdown.style.display === 'block';
-            document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none'); // Hide all dropdowns
-            dropdown.style.display = isVisible ? 'none' : 'block'; // Toggle visibility
+        let scrollInterval;
+
+        // Function to scroll to the previous or next card
+        function scrollToNextOrPrevCard(section, direction) {
+            const content = document.getElementById(section + '-content');
+            const cards = content.getElementsByClassName('card');
+            const contentRect = content.getBoundingClientRect();
+        
+            // Find the closest card to the center
+            for (let card of cards) {
+                const cardRect = card.getBoundingClientRect();
+                const cardCenter = cardRect.left + cardRect.width / 2;
+                const contentCenter = contentRect.left + contentRect.width / 2;
+        
+                if (Math.abs(cardCenter - contentCenter) < cardRect.width / 2) {
+                    let nextCard;
+                    if (direction === 'left') {
+                        nextCard = card.previousElementSibling || card;  // If no previous card, stay on current
+                    } else {
+                        nextCard = card.nextElementSibling || card;  // If no next card, stay on current
+                    }
+        
+                    // Scroll to the next or previous card
+                    const scrollLeft = nextCard.offsetLeft - (content.offsetWidth - nextCard.offsetWidth) / 2;
+                    content.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+                    break;
+                }
+            }
+        }
+        
+        // Continuous scroll while holding down the arrow
+        function continuousScroll(section, distance) {
+            scrollInterval = setInterval(() => {
+                document.getElementById(section + '-content').scrollBy({ left: distance, behavior: 'auto' });
+            }, 30);  // Adjust the speed of scrolling
+        }
+        
+        // Stop continuous scrolling
+        function stopScroll() {
+            clearInterval(scrollInterval);
+        }
+        
+        // Center the nearest card after scrolling stops
+        function centerCard(section) {
+            const content = document.getElementById(section + '-content');
+            const cards = content.getElementsByClassName('card');
+            const contentRect = content.getBoundingClientRect();
+            let closestCard = null;
+            let closestDistance = Infinity;
+        
+            for (let card of cards) {
+                const cardRect = card.getBoundingClientRect();
+                const cardCenter = cardRect.left + cardRect.width / 2;
+                const contentCenter = contentRect.left + contentRect.width / 2;
+                const distance = Math.abs(cardCenter - contentCenter);
+        
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    closestCard = card;
+                }
+            }
+        
+            if (closestCard) {
+                const scrollLeft = closestCard.offsetLeft - (content.offsetWidth - closestCard.offsetWidth) / 2;
+                content.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+            }
         }
 
-        /* Optional: Hide dropdown when clicking outside */
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.nav-item')) {
-                document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
-            }
+        // Add event listeners for mousedown, mouseup, touchstart, touchend for continuous scrolling
+        document.querySelectorAll('.arrow').forEach(arrow => {
+            arrow.addEventListener('mousedown', (event) => {
+                const direction = event.target.classList.contains('left') ? 'left' : 'right';
+                const section = event.target.closest('.content-container').querySelector('.content').id.split('-')[0];
+                continuousScroll(section, direction === 'left' ? -5 : 5);  // Adjust speed if needed
+            });
+
+            arrow.addEventListener('mouseup', stopScroll);
+            arrow.addEventListener('mouseleave', stopScroll);
+            arrow.addEventListener('touchstart', (event) => {
+                const direction = event.target.classList.contains('left') ? 'left' : 'right';
+                const section = event.target.closest('.content-container').querySelector('.content').id.split('-')[0];
+                continuousScroll(section, direction === 'left' ? -5 : 5);
+            });
+
+            arrow.addEventListener('touchend', stopScroll);
+            arrow.addEventListener('touchcancel', stopScroll);
+        });
+
+        // Center cards after scrolling stops
+        document.querySelectorAll('.content').forEach(content => {
+            content.addEventListener('scroll', (event) => {
+                clearTimeout(content.scrollTimer);
+                content.scrollTimer = setTimeout(() => centerCard(content.id.split('-')[0]), 100);
+            });
         });
     </script>
+
 </body>
 </html>
