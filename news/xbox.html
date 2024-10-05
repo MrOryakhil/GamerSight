@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJJPRTMB8Q"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FJJPRTMB8Q');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Microsoft's official survey seeks feedback from developers and gamers about why they optimize their games for PlayStation 5 over Xbox consoles.">
+    <meta name="robots" content="index,follow"/>
+    <meta property="og:title" content="Microsoft's Survey Asks Developers Why They Prefer PlayStation 5 Over Xbox" />
+    <meta property="og:description" content="Microsoft's official survey seeks feedback from developers and gamers about why they optimize their games for PlayStation 5 over Xbox consoles."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://www.gamerssight.com/newsphotos/xbox.webp" />
+    <meta property="og:url" content="https://www.gamerssight.com/news/xbox.html" />
+    <meta name="author" content="Hamza Oryakhil">
+    <meta name="twitter:card" content="https://www.gamerssight.com/newsphotos/xbox.webp">
+    <meta name="twitter:title" content="Microsoft's Survey Asks Developers Why They Prefer PlayStation 5 Over Xbox">
+    <meta name="twitter:description" content="Microsoft's official survey seeks feedback from developers and gamers about why they optimize their games for PlayStation 5 over Xbox consoles.">
+    <meta name="twitter:image" content="https://www.gamerssight.com/newsphotos/xbox.webp">
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <title>Microsoft's Survey Asks Developers Why They Prefer PlayStation 5 Over Xbox</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Gamers Sights</h1>
+        </div>
+        <nav>
+            <ul class="nav-container">
+                <li><a href="https://www.gamerssight.com/index.html" >Home</a></li>
+                <li><a href="https://www.gamerssight.com/index.html" >About Us</a></li>
+                <li><a href="https://www.gamerssight.com/index.html" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="news-container">
+        <h1>Microsoft's Survey Asks Developers Why They Prefer PlayStation 5 Over Xbox</h1>
+        <img src="../newsphotos/xbox.webp" alt="xbox photo" loading="lazy">
+        <div class="share-container">
+            <button class="share-btn" onclick="sharePage()">Share This Page</button>
+        </div>
+        <p>According to a report from PSU, Microsoft has launched a new survey on its official website to gather feedback from game developers and users of rival consoles. The survey includes a question that reads, “If you are not a user of Xbox consoles, we would love to know why. We are genuinely interested in hearing from those who use our competitors' consoles, as your insights are valuable and can teach us a lot.”</p>
+
+        <p>Microsoft explained that the company’s experts do not want to approach the situation from a one-sided perspective, focusing only on their own views. Instead, they believe that hearing the opinions of those outside their user community could greatly aid their future plans.</p>
+
+        <p>Both the PlayStation 5 and Xbox Series X were launched around the same time and are similar in terms of hardware capabilities and consumer pricing. However, it is widely recognized that Microsoft struggles to compete with Sony in the console market, with PS5 sales vastly outpacing Xbox. Although Microsoft has not publicly shared its console sales figures for some time, reports indicate that the ratio of PlayStation to Xbox sales has more than tripled in favor of PlayStation.</p>
+
+        <p>In recent years, Microsoft has adopted a multi-platform approach, releasing several of its once-exclusive games on PlayStation and Nintendo platforms. This trend seems set to continue, with the upcoming release of *Indiana Jones and the Great Circle* for PlayStation 5 in 2025.</p>
+
+        <p>It appears that Microsoft is now aiming to analyze all aspects of the market as it works to refine its strategy for the next generation of consoles, seeking to make the best possible decisions to ensure success in a competitive environment.</p>
+        <div class="share-container">
+            <button class="share-btn" onclick="sharePage()">Share This Page</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Gamers Sight</h3>
+                <p>Gamers Sight is your go-to source for the latest news, rumors, and leaks about Gaming and Gaming Appliances. Stay tuned for more updates and exclusive insights.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.htm">Home</a></li>
+                    <li><a href="../../index.htm">About</a></li>
+                    <li><a href="../../index.htm">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GamersSight. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: document.title,  // Page title
+                    text: 'Check out this news on Delta Force Hawk Ops!',  // Description
+                    url: window.location.href  // The current URL of the page
+                })
+                .then(() => console.log('Page shared successfully!'))
+                .catch((error) => console.error('Error sharing:', error));
+            } else {
+                alert('Your browser does not support sharing.');
+            }
+        }
+    </script>
+</body>
+</html>

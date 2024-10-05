@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJJPRTMB8Q"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FJJPRTMB8Q');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="The 2024 Windows 11 update introduces a significant improvement in file transfer speed with the use of the ReFS file system.">
+    <meta name="robots" content="no index,follow"/>
+    <meta property="og:title" content="2024 Windows 11 Update: Faster File Transfers with ReFS" />
+    <meta property="og:description" content="The 2024 Windows 11 update introduces a significant improvement in file transfer speed with the use of the ReFS file system."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://www.gamerssight.com/newsphotos/intel-6900P-1.jpg" />
+    <meta property="og:url" content="https://www.gamerssight.com/news/intel2.html" />
+    <meta name="author" content="Hamza Oryakhil">
+    <meta name="twitter:card" content="https://www.gamerssight.com/newsphotos/intel-6900P-1.jpg">
+    <meta name="twitter:title" content="2024 Windows 11 Update: Faster File Transfers with ReFS">
+    <meta name="twitter:description" content="The 2024 Windows 11 update introduces a significant improvement in file transfer speed with the use of the ReFS file system.">
+    <meta name="twitter:image" content="https://www.gamerssight.com/newsphotos/intel-6900P-1.jpg">
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <title>2024 Windows 11 Update: Faster File Transfers with ReFS</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Gamers Sights</h1>
+        </div>
+        <nav>
+            <ul class="nav-container">
+                <li><a href="https://www.gamerssight.com/index.html" >Home</a></li>
+                <li><a href="https://www.gamerssight.com/index.html" >About Us</a></li>
+                <li><a href="https://www.gamerssight.com/index.html" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="news-container">
+        <h1>2024 Windows 11 Update: Faster File Transfers with ReFS</h1>
+        <img src="../newsphotos/windows-11.jpg" alt="windows-11 photo" loading="lazy">
+        <div class="share-container">
+            <button class="share-btn" onclick="sharePage()">Share This Page</button>
+        </div>
+        <p>The 2024 Windows 11 update brings a remarkable boost in file transfer speed, significantly increasing copy performance. This advancement is made possible by the resilient file system (ReFS), which has transitioned from servers to desktops and laptops. One of the key features of this technology is block-level cloning, which accelerates file copying operations like never before. Read on for more details and how to enable it.</p>
+
+        <p>ReFS, which has been used in Microsoft’s server products since 2012, serves as an alternative to NTFS, which remains the default file system for regular Windows users. ReFS offers distinct advantages for data centers and environments with high volumes of read/write operations.</p>
+
+        <h2>Enabling ReFS in Windows 11 for Faster File Copying</h2>
+        <img src="../newsphotos/chart.jpg" alt="windows-11 photo" loading="lazy">
+
+        <p>One of ReFS' standout features is the "block cloning" technology, which dramatically improves file copy speeds. According to Microsoft, this technology increases copy speed by 18% for 1 MB files and up to 94% for 1 GB files compared to NTFS. Even for large folders, there is an 80% speed improvement. For example, copying an 18 GB folder now takes just 6 seconds, whereas it previously took over 30 seconds.</p>
+
+        <p>In addition to speed enhancements, ReFS offers the ability to automatically check the health of data, identifying and removing corrupt data without affecting other parts of the disk.</p>
+
+        <p>Despite all the benefits, ReFS is not primarily designed for everyday users and does come with limitations. These include a lack of support for certain NTFS features such as file compression and encryption. Additionally, ReFS cannot be used as the boot drive for the operating system, and there is no direct conversion between NTFS and ReFS, requiring a full drive format instead.</p>
+
+        <p>Because of this, Microsoft has introduced ReFS in Windows 11 as an auxiliary drive under the name "Dev Drive." It is specifically designed for developers, IT professionals, and power users who handle large datasets. Microsoft recommends using ReFS for ongoing projects, while NTFS should still be used for the operating system, applications, and personal data.</p>
+
+        <p>Setting up a Dev Drive with ReFS is straightforward. Users who previously had to rely on the old disk management tools can now perform this task through the modern Windows settings app. Simply go to Windows Settings and navigate to System > Storage > Advanced Storage Settings > Disks & Volumes, then select "Create dev drive."</p>
+        <div class="share-container">
+            <button class="share-btn" onclick="sharePage()">Share This Page</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Gamers Sight</h3>
+                <p>Gamers Sight is your go-to source for the latest news, rumors, and leaks about Gaming and Gaming Appliances. Stay tuned for more updates and exclusive insights.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.htm">Home</a></li>
+                    <li><a href="../../index.htm">About</a></li>
+                    <li><a href="../../index.htm">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GamersSight. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: document.title,  // Page title
+                    text: 'Check out this news on Delta Force Hawk Ops!',  // Description
+                    url: window.location.href  // The current URL of the page
+                })
+                .then(() => console.log('Page shared successfully!'))
+                .catch((error) => console.error('Error sharing:', error));
+            } else {
+                alert('Your browser does not support sharing.');
+            }
+        }
+    </script>
+</body>
+</html>
