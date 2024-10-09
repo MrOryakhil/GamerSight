@@ -167,6 +167,13 @@ th {
         margin-left : 20%;
         margin-right : 20%;
     }
+    h3 {
+        color: #d4a05c;
+        font-size: 24px;
+        padding: 20px;
+        margin-left : 20%;
+        margin-right : 20%;
+    }
     p {
         font-size: 22px;
         line-height: 1.6;
@@ -274,6 +281,12 @@ th {
     h2 {
         color: #d4a05c;
         font-size: 28px;
+        margin-left: 10px; /* Same left margin as image */
+        margin-right: 10px; /* Same right margin as image */
+    }
+    h3 {
+        color: #d4a05c;
+        font-size: 24px;
         margin-left: 10px; /* Same left margin as image */
         margin-right: 10px; /* Same right margin as image */
     }
