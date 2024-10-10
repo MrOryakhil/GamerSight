@@ -92,10 +92,11 @@ th {
         margin-left: auto;
         margin-right: auto;
     }
+    
     .share-btn {
         display: block;
-        background-color: yellow; /* Yellow button */
-        color: black; /* Text color */
+        background-color: #ff3300; /* Yellow button */
+        color: #fff; /* Text color */
         text-align: center;
         padding: 15px 0; /* Padding for the button */
         font-size: 20px; /* Increased font size for visibility */
@@ -109,10 +110,11 @@ th {
         margin-bottom: 50px; /* Space below the button */
         text-decoration: none; /* Remove underline from text */
         border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease;
     }
     
     .share-btn:hover {
-        background-color: #ffcc00; /* Slightly darker yellow on hover */
+        background-color: #e60000; /* Slightly darker yellow on hover */
     }
     
     iframe {
@@ -214,8 +216,8 @@ th {
     }
     .share-btn {
         display: block;
-        background-color: yellow; /* Yellow button */
-        color: black; /* Text color */
+        background-color: #ff3300; /* Yellow button */
+        color: #fff; /* Text color */
         text-align: center;
         padding: 15px 0; /* Padding for the button */
         font-size: 20px; /* Increased font size for visibility */
@@ -229,10 +231,11 @@ th {
         margin-bottom: 50px; /* Space below the button */
         text-decoration: none; /* Remove underline from text */
         border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease;
     }
     
     .share-btn:hover {
-        background-color: #ffcc00; /* Slightly darker yellow on hover */
+        background-color: #e60000; /* Slightly darker yellow on hover */
     }
     iframe {
         margin-left: 10px; /* 10px margin from the left */
